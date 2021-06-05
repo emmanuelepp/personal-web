@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="{{url_for('static',filename='/images/code.png')}}"
+      type="image/x-icon"
+    />
+    <!-- <link
+      rel="shortcut icon"
+      href="{{url_for('static',filename='/css/style.css')}}"
+      type="image/x-icon"
+    /> -->
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Emmanuelepp</title>
+  </head>
+  <body>
+    <!-- <h1>Hello from flask</h1> -->
+
+    <div class="container align-content-center">
+      <div class="card">
+        <div class="img">
+          <img src="../static/images/pic.png" alt="" />
+        </div>
+        <div class="top-text">
+          <div class="name">Emmmanuel Ponciano</div>
+          <p>Software Engineer</p>
+        </div>
+        <div class="botton-text">
+          <div class="text">
+            "Always leave the campground cleaner than you found it. If you find
+            a mess on the ground, you clean it up regardless of who might have
+            made the mess". <br /><br />
+            <strong>Uncle Bob</strong>
+          </div>
+
+          <!-- <div class="btn">
+            <a href="#"> Read more...</a>
+          </div> -->
+        </div>
+        <div class="social-media">
+          <a
+            href="https://twitter.com/Emmanuelepp"
+            target="_blank"
+            style="color: black"
+            class="icotwitter"
+            title="Twitter"
+            ><i class="fa fa-twitter fa-lg"></i
+          ></a>
+
+          <a
+            href="https://github.com/emmanuelepp"
+            target="_blank"
+            style="color: black"
+            class="icogithub"
+            title="Github"
+            ><i class="fa fa-github fa-lg"></i
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/emmanuelponciano/"
+            target="_blank"
+            style="color: black"
+            class="icolinkedin"
+            title="Linkedin"
+            ><i class="fa fa-linkedin fa-lg"></i
+          ></a>
+
+          <!-- <a
+            href="https://www.google.com/maps/place/Boston,+MA/@42.3143286,-71.0403236"
+            target="_blank"
+            style="color: black"
+            class="icoMap"
+            ><i class="fa fa-map-marker fa-lg"></i
+          ></a> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer">
+    <small>Make with &hearts; in Flask &copy; Copyright {{date}}</small>
+  </footer>
+</html>

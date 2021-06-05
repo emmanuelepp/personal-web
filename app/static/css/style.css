@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  text-align: right;
+  margin-left: -10px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+body {
+  background-image: url(../images/img8.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+  overflow: hidden;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+.social-media {
+  text-decoration: none;
+  justify-content: center;
+  margin-top: 17px;
+  justify-content: space-between;
+}
+.icotwitter {
+  margin-right: 1em;
+  align-items: center;
+}
+.icogithub {
+  align-items: center;
+}
+
+.icolinkedin {
+  margin-left: 1em;
+  align-items: center;
+}
+
+/* .html,
+.body {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  text-align: center;
+} */
+.container {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.card {
+  height: 300px;
+  width: 360px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card /*:hover*/ {
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  transition: all 0s;
+  -webkit-transition: all 1s;
+  opacity: 1;
+}
+
+/* .card .img {
+  vertical-align: middle;
+  object-fit: cover;
+  overflow: hidden;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+} */
+
+/* .card .img .img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.card .top-text {
+  padding: 5px;
+}
+
+.card .top-text .name {
+  font-size: 34px;
+  font-weight: 600;
+  color: #202020;
+}
+
+.card .top-text .name .p {
+  font-size: 40px;
+  font-weight: 800;
+  color: #202020;
+  line-height: 20px;
+}
+.card .botton-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 80px;
+  margin-top: 5px;
+  background: white;
+  /* opacity: 0;
+  visibility: hidden;
+  transition: 0.1s; */
+}
+
+.card:hover .botton-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .botton-text .text {
+  text-align: justify;
+}
+
+.card .botton-text .text .btn {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card .botton-text .text .btn .a {
+  text-decoration: none;
+  background: #202020;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.3s;
+}
+
+/* .card .botton-text .text .btn .a:hover {
+  transform: scale(0.7);
+} */
+
+@media screen and (max-width: 978px) {
+  container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  card {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+@keyframes slideInFromTop {
+  /* 0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  } */
+
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+}
