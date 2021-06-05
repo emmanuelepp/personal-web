@@ -6,5 +6,11 @@ date = datetime.datetime.now().strftime('%Y')
 
 # act
 
+
+def test_date_case():
+    result = date
+    return result
+
+
 # assert
-assert date != None
+assert test_date_case != None
