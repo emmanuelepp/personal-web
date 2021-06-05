@@ -1,0 +1,25 @@
+
+lenguage: python
+
+python:
+  - '3.9'
+install:
+  - pip install -r requirements.txt
+git:
+  depth: 3
+
+edge: true
+  
+script:
+  - pytest test_app.py
+deploy:
+  provider: github
+  skip_cleanup: true
+  keep_history: true
+  github_token: $GITHUB_TOKEN
+  local_dir: /
+  target_branch: personal-web
+  commit_message: 'Commit changes'
+  on:
+    branch: personal-web
+    repo: emmanuelepp/personal-web
