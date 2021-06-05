@@ -13,4 +13,4 @@ def test_date_case():
 
 
 # assert
-assert test_date_case != None
+assert test_date_case() != None
