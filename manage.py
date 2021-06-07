@@ -1,4 +1,5 @@
 from flask_script import Manager
+from flask._compat import text_type
 from app import initializer
 from config import config
 
